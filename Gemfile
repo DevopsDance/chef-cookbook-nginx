@@ -4,6 +4,5 @@ gem 'berkshelf'
 gem 'test-kitchen'
 gem 'kitchen-vagrant'
 gem 'foodcritic'
-gem 'pry'
 
 # vim:ft=ruby:
