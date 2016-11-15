@@ -1,0 +1,14 @@
+server {
+    listen 80 default;
+    listen 81 default;
+
+    server_name localhost;
+
+    location / {
+        return 200;
+    }
+
+    location /error {
+        return 404;
+    }
+}
