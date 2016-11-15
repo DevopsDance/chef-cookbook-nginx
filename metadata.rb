@@ -10,4 +10,4 @@ issues_url 'https://github.com/DevopsDance/chef-cookbook-nginx/issues'
 depends 'apt'
 
 supports 'ubuntu', '>= 14.04'
-supports 'debian', '>= 7'
+supports 'debian', '>= 7.8'
