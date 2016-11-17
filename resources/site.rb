@@ -27,7 +27,7 @@ action :enable do
   template "#{nginx_dir}/sites-available/#{site_name}" do
     owner 'root'
     group 'root'
-    mode 00640
+    mode 00644
     source "#{site_name}.erb"
     variables site_variables
     only_if { site_template }
