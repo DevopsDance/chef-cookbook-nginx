@@ -13,7 +13,7 @@ cookbook_file '/etc/nginx/nginx.conf' do
   owner 'root'
   group 'root'
   mode 00644
-  notifies :reload, 'service[nginx]', :delayed
+  notifies :restart, 'service[nginx]', :delayed
 end
 
 nginx_conf 'include_modules' do
