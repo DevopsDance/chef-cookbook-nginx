@@ -1,2 +1,2 @@
-include_recipe 'nginx::_install'
-include_recipe 'nginx::_conf'
+include_recipe 'devopsdance-nginx::_install'
+include_recipe 'devopsdance-nginx::_conf'

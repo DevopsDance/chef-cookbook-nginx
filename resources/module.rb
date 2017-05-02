@@ -8,6 +8,8 @@
 #   action :enable
 # end
 
+resource_name :nginx_module
+
 default_action :enable
 
 property :module_name, String, name_property: true
