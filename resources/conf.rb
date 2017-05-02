@@ -5,6 +5,8 @@
 #   action :create
 # end
 
+resource_name :nginx_conf
+
 default_action :create
 
 property :config, String, name_property: true

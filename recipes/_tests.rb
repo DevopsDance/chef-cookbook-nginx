@@ -1,4 +1,4 @@
-include_recipe 'nginx'
+include_recipe 'devopsdance-nginx'
 
 nginx_site 'tests' do
   action :enable

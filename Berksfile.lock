@@ -1,11 +1,9 @@
 DEPENDENCIES
-  nginx
+  devopsdance-nginx
     path: .
     metadata: true
 
 GRAPH
-  apt (5.0.0)
-    compat_resource (>= 12.14.7)
-  compat_resource (12.16.2)
-  nginx (0.1.7)
+  apt (6.1.0)
+  devopsdance-nginx (1.0.0)
     apt (>= 0.0.0)

@@ -9,6 +9,8 @@
 #   action :disable
 # end
 
+resource_name :nginx_site
+
 default_action :enable
 
 property :site_name, String, name_property: true
