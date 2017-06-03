@@ -24,7 +24,7 @@ end
 
 package 'nginx-modules' do
   name node['nginx']['modules']
-  only_if { node['nginx'].attribute?('modules') }
+  not_if { node['nginx']['modules'].empty? }
   action 'install'
 end
 

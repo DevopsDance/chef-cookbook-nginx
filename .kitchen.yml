@@ -5,7 +5,6 @@ driver:
 
 provisioner:
   name: chef_zero
-  require_chef_omnibus: 12.19.36-1
 
 platforms:
   - name: ubuntu-14.04
@@ -24,7 +23,14 @@ platforms:
   - name: debian-7.8
 
 suites:
-  - name: default
+  - name: default-12
     run_list:
       - recipe[devopsdance-nginx::_tests]
+    provisioner:
+      require_chef_omnibus: 12
+  - name: default-13
+    run_list:
+      - recipe[devopsdance-nginx::_tests]
+    provisioner:
+      require_chef_omnibus: 13
 
