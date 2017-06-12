@@ -2,7 +2,7 @@
 default['nginx']['conf']['core']['user'] = 'www-data'
 default['nginx']['conf']['core']['worker_processes'] = '8'
 default['nginx']['conf']['core']['error_log'] = '/var/log/nginx/error.log'
-default['nginx']['conf']['core']['pid'] = '/var/run/nginx.pid'
+default['nginx']['conf']['core']['pid'] = '/run/nginx.pid'
 
 # events context
 default['nginx']['conf']['events']['worker_connections'] = '1024'

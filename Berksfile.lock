@@ -1,9 +1,0 @@
-DEPENDENCIES
-  devopsdance-nginx
-    path: .
-    metadata: true
-
-GRAPH
-  apt (6.1.0)
-  devopsdance-nginx (1.0.1)
-    apt (>= 0.0.0)
